@@ -17,16 +17,16 @@ function pause(){
 # git init
 # git add .
 # git commit -m "first commit"
-# git branch -M main
+# git branch -M public
 # git remote add origin git@github.com:powintarmd/powi-nav.git
 git remote set-url --add origin git@github.com:powintarmd/powi-nav.git
 git status
 pause 'Press any key to continue...'
-git diff origin/main
+git diff origin/public
 pause 'Press any key to continue...'
-git fetch origin main
+git fetch origin public
 pause 'Press any key to continue...'
-git merge origin/main
+git merge origin/public
 pause 'Press any key to continue...'
 git add -A
 git status
@@ -45,8 +45,8 @@ git status
 pause 'Press any key to continue...'
 git log --oneline -10
 pause 'Press any key to continue...'
-#git push -u origin main
-git push origin main:main
+#git push -u origin public
+git push origin public:public
 
 # [Reference]
 # https://www.cyberciti.biz/tips/linux-unix-pause-command.html
